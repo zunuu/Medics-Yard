@@ -7,10 +7,10 @@ import phone from '../../images/icons/phone.svg'
 
 const Info = () => {
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
-            <Inforcard cardTitle="Opening Hours" img={clock}></Inforcard>
-            <Inforcard cardTitle="Our Location" img={location}></Inforcard>
-            <Inforcard cardTitle="Contact Us" img={phone}></Inforcard>
+        <div className='grid grid-cols-1 lg:grid-cols-3 px-8 gap-5'>
+            <Inforcard cardTitle="Opening Hours" backgroundClass="bg-gradient-to-r from-secondary to-primary" img={clock}></Inforcard>
+            <Inforcard cardTitle="Our Location" backgroundClass="bg-accent" img={location}></Inforcard>
+            <Inforcard cardTitle="Contact Us" backgroundClass="bg-gradient-to-r from-secondary to-primary" img={phone}></Inforcard>
         </div>
     );
 };

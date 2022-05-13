@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-const Inforcard = ({ img, cardTitle }) => {
+const Inforcard = ({ img, cardTitle, backgroundClass }) => {
     return (
-        <div class="card  lg:card-side bg-accent shadow-xl">
+        <div class={` card  lg:card-side bg-accent shadow-xl ${backgroundClass}`}>
             <figure className='pl-5'>
                 <img src={img} />
             </figure>
