@@ -1,11 +1,9 @@
 import { format } from 'date-fns';
-import React, { useState } from 'react';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 
 
-const AppoinementBanner = () => {
-    const [date, setDate] = useState(new Date());
+const AppoinementBanner = ({ dateToday, setDateToday }) => {
 
     return (
         <div>
@@ -15,10 +13,10 @@ const AppoinementBanner = () => {
                     <div className='p-20'>
                         <DayPicker className='p-10 shadow-xl rounded-2xl'
                             mode="single"
-                            selected={date}
-                            onSelect={setDate}
+                            selected={dateToday}
+                            onSelect={setDateToday}
                         />
-                        <p className='px-10 py-5'>You have selected: {format(date, 'PP')}</p>
+                        <p className='px-10 py-5'>You have selected: {format(dateToday, 'PP')}</p>
                     </div>
                 </div>
             </div>

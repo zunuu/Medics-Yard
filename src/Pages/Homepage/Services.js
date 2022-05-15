@@ -19,12 +19,14 @@ const Services = () => {
             description: "When a patient have an emergency situation, we take a special attention,if needed our doctors arrive in the home as soon as possible and come to the nearest hospital with the patient for treatment , test or for the other actions",
             image: emergency
         },
+
         {
-            _id: 3,
-            name: "Ambulance",
+            _id: 4,
+            name: "Online Appointment",
             description: "Due to Emergency situation or Difficulty in the weather, it wouldn't possible for a patient to arrive in the nearest hospital.We will take a look at that moment in any kinds of weather condition, we try our best",
             image: ambulance
         }
+
 
     ]
     return (
