@@ -2,7 +2,7 @@ import React from 'react';
 
 const Service = ({ eachService }) => {
     return (
-        <div className="card w-96  image-full shadow-xl">
+        <div className="card lg:max-w-lg  image-full shadow-xl">
             <figure >
                 {/* make these images to show when hover...without hover the cards will be transperant */}
                 <img src={eachService.image} alt="Shoes" className="rounded-xl" />
